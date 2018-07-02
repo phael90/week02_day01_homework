@@ -4,6 +4,7 @@ class SportTeam
     @name = name
     @coach = coach
     @players = players
+    @points = 0
   end
   attr_reader(:name, :coach, :players)
   attr_writer(:coach)
