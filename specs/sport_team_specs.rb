@@ -35,4 +35,14 @@ def test_set_coach
   sport_team.coach = "Zidane"
   assert_equal("Zidane", sport_team.coach())
 end
+
+def test_add_player
+team_name = "Brasil"
+coach = "Tite"
+players = ["Marcelo", "Neymar"]
+sport_team = SportTeam.new(team_name, coach, players)
+sport_team.add_player("Coutinho")
+assert_equal(3, sport_team.players.length)
+end
+
 end

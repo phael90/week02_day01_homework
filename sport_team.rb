@@ -7,4 +7,9 @@ class SportTeam
   end
   attr_reader(:name, :coach, :players)
   attr_writer(:coach)
+
+  def add_player(player)
+  @players.push(player)
+  end
+
 end
