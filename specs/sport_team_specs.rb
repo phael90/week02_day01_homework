@@ -45,12 +45,12 @@ sport_team.add_player("Coutinho")
 assert_equal(3, sport_team.players.length)
 end
 
-def test_check_player
+def test_check_player_false
   team_name = "Brasil"
   coach = "Tite"
   players = ["Marcelo", "Neymar"]
   sport_team = SportTeam.new(team_name, coach, players)
-  assert_equal(true, sport_team.check_player("Marcelo"))
+  assert_equal(false, sport_team.check_player_false("Zidane"))
 end
 
 end

@@ -12,7 +12,7 @@ class SportTeam
     @players.push(player)
   end
 
-  def check_player(name)
+  def check_player_false(name)
     for player in @players
       if name == player
         return true
