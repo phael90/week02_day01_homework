@@ -32,7 +32,7 @@ def test_set_coach
   coach = "Tite"
   players = ["Marcelo", "Neymar"]
   sport_team = SportTeam.new(team_name, coach, players)
-  sport_team.set_coach("Zidane")
+  sport_team.coach = "Zidane"
   assert_equal("Zidane", sport_team.coach())
 end
 end
