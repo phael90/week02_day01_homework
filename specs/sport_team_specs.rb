@@ -18,4 +18,12 @@ def test_sport_team_coach
   sport_team = SportTeam.new(team_name, coach, players)
   assert_equal("Tite", sport_team.coach())
 end
+
+def test_sport_team_players
+  team_name = "Brasil"
+  coach = "Tite"
+  players = ["Marcelo", "Neymar"]
+  sport_team = SportTeam.new(team_name, coach, players)
+  assert_equal(players, sport_team.players())
+end
 end
